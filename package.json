@@ -19,7 +19,10 @@
   "homepage": "https://github.com/gitnelsonmellounaerp/projetoIntegradorQuartaEtapa#readme",
   "dependencies": {
     "@fontsource/open-sans": "^4.5.10",
+<<<<<<< HEAD
     "bootstrap": "^5.2.0-beta1",
+=======
+>>>>>>> 546c7d58bf39734c013f63f085e2e48c1d9a6179
     "ejs": "^3.1.8",
     "express": "^4.18.1"
   }
