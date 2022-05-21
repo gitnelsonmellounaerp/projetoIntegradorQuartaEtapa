@@ -1,21 +1,23 @@
-const express = require('express');
+const express = require('express'); // conexao com o modulo do express
 const app = express();
 
-app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.set("view engine", "ejs"); // faz o express renderizar os arquivos .ejs (precisa instalar o modulo ejs)
+app.use(express.static("public")); // faz o express ler arquivos estaticos na pasta public
+
 
 //criando as paginas
 
+//dar ctrl c + ctrl v nessas funcoes quando for criar uma nova pagina 
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("pages/index");
 });
 
 
-app.get("/sobre", function(req, res){
+app.get("/editar", function(req, res){
     res.render("pages/editar");
 });
 
-app.get("/sobre", function(req, res){
+app.get("/atestado", function(req, res){
     res.render("pages/atestado");
 });
 
