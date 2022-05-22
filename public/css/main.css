@@ -52,8 +52,16 @@ body main{
     margin-top: 48px;
     margin-right: 106px;
 }
+
+.form-content{
+    height: 888px;
+    background-color:white;
+    border-radius: 16px;
+    margin-left: 96px;
+    margin-top: 45px;
+}
 nav {
-    height: 100vh;
+    height: 100%;
     background-color: #032565;
     opacity: 1;
 }
