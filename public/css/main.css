@@ -1,68 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    
-}
-
 body {
+    
+    height:100vh;
+    width: 100%;
     background-color: #CCCCCC;
 
 }
-.sidebar{
-    position: fixed;
-    left: 0;
-    width: 365px;
+
+body main{
+    background-color: #CCCCCC;
+    width: 100vh;
+}
+.info-aluno{
+    float:left; 
+
+    width: 629px;
+    height:296px;
+    background-color: white;
+    border-radius:16px;
+    margin-top: 96px;
+    margin-left: 96px;
+}
+
+.info-treino{
+ 
+    float:right;
+    width: 629px;
+    height:360px;
+    background-color: white;
+    border-radius:16px;
+    margin-top: 96px;
+    margin-right: 106px;
+}
+
+.info-matricula{
+    
+    float: left;
+    width: 629px;
+    height:360px;
+    background-color: white;
+    border-radius:16px;
+    margin-top: 48px;
+    margin-left: 96px;
+}
+
+.info-acoes{
+    float:right;
+    width: 629px;
+    height:296px;
+    background-color: white;
+    border-radius:16px;
+    margin-top: 48px;
+    margin-right: 106px;
+}
+nav {
     height: 100vh;
     background-color: #032565;
     opacity: 1;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
 
-.sidebar header{
-    font-size:22px;
-    color: white;
-    text-align: center;
-    line-height: 70px;
-    user-select: none;
+.fa-home-alt:before, .fa-home-lg-alt:before, .fa-home:before, .fa-house:before, .fa-user-alt:before, .fa-user-large:before, .fa-calendar-check:before{
+    margin-right: 12px;
+    color:white;
 }
 
-.sidebar ul a{
-    display:block;
-    height: 100%;
-    width: 100%;
-    line-height:60px;
-    font-size:20px;
-    color: white;
-    
-    box-sizing: border-box;
-    border-top: 1px solid rgba(255,255,255, .1);
-    border-bottom: 1px solid black;
-    transition: .4s;
-}
 
-ul li:hover a {
-    padding-left: 40px;
-    background-color: #0C77AF
-}
-
-.sidebar ul a i{
-    
-    font-family: Open Sans;
-    font-size: 30px;
-    letter-spacing: 0;
-    text-align: left;
-    padding-left: 24px;
-}
-
-header nav li a {
-    width: 100%;
-    
-   
-    
-    
-    color: white;
-    
-
-
-}
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }

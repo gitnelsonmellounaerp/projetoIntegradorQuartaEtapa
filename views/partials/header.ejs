@@ -1,11 +1,18 @@
-<nav class="sidebar">
-    <header>
-        My app
-            <ul>
-                <li><a href="/" class="fas fa-home"><i>Início</i></a></li>
-                <li><a href="/editar" class="fas fa-edit"><i>Editar dados</i></a></li>
-                <li><a href="/atestado" class="fas fa-calendar"><i>Envio atestado</i></a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="container col-2">
+    <header><i class="fa-solid fa-arrow-right-from-bracket">Logout</i></header>
+  <ul class="nav flex-column">
+      <li class="nav-item"><a href="/" class="nav-link fas fa-home white-text icon">Home</a></li>
+      <li class="nav-item dropdown"><a href="/" class="nav-link dropdown-toggle fas fa-user-alt icon" data-bs-toggle="dropdown" role="button">Cadastro</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Editar Cadastro</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"><a href="/" class="nav-link dropdown-toggle fas fa-calendar-check icon" data-bs-toggle="dropdown" role="button">Presença</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Enviar atestado</a></li>
+        </ul>
+      </li>
+  </ul>
+
 </nav>
+

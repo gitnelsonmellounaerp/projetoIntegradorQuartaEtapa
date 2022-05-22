@@ -1,10 +1,11 @@
+
 const express = require('express'); // conexao com o modulo do express
 const app = express();
 
 app.set("view engine", "ejs"); // faz o express renderizar os arquivos .ejs (precisa instalar o modulo ejs)
 app.use(express.static("public")); // faz o express ler arquivos estaticos na pasta public
 
-const bootstrap = require('bootstrap'); // ler o módulo do bootstrap
+//const bootstrap = require('bootstrap'); // ler o módulo do bootstrap
 
 
 //criando as paginas
