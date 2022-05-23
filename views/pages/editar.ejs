@@ -3,10 +3,62 @@
 <body class="row">
     <%- include('../partials/header'); %>
 
-    <main class="container col-10">
+    <main class="container-fluid col-10">
        <div class="form-content col-10">
-
-
+            <form action="">
+                <div class="mb-3 mt-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome completo" class="form-control">
+                </div>
+                <p class="h3">Endereço</p>
+                <div class="mb-3 row container-fluid">
+                    <div class="col-3">
+                        <label for="cep" id="label-cep" class="form-label">CEP</label>
+                        <input type="text" id="cep" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="rua" id="label-rua" class="form-label">Rua</label>
+                        <input type="text" id="rua" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <label for="numero" id="label-numero" class="form-label">Número</label>
+                        <input type="text" id="numero" class="form-control">
+                    </div> 
+                 
+                </div>
+                <div class="mb-3 row container-fluid">
+                    <div class="col-5">
+                        <label for="complemento" class="form-label" id="label-complemento" class="form-label">Complemento</label>
+                        <input type=" text" id="complemento" class="form-control">
+                    </div>
+                    <div class="col-5">
+                        <label for="bairro" class="form-label" id="label-bairro">Bairro</label>
+                        <input type="text" id="bairro" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row container-fluid">                    
+                    <div class="col-5">
+                        <label for="cidade" class="form-label" id="label-cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade">
+                    </div>
+                    <div class="col-5">
+                        <label for="estado" class="form-label" id="label-estado">Estado</label>
+                        <input type="text" class="form-control" id="estado">
+                    </div>
+                </div>
+                <p class="h3">Documentos</p>
+                <div class="mb-3 row container-fluid">
+                    <div class="col-12">
+                        <label for="fotos" class="form-label">foto 3x4</label>
+                        <input type="file" class="form-control form-control-sm" id="fotos" multiple>
+                        <label for="comprovantes" class="form-label">Comprovante de residência <br> (água ou luz)</label>
+                        <input type="file" class="form-control form-control-sm" id="comprovantes" multiple>
+                        <label for="contrato" class="form-label">Contrato Assinado</label>
+                        <input type="file" class="form-control form-control-sm" id="contrato" multiple>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
        </div>
     </main>
     
